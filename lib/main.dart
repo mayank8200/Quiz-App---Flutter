@@ -21,7 +21,7 @@ class MyAppState extends State<MyApp> {
     print(i);
   }
 
-  var questions = ["What's Your Name", "What's Your fav color","What's your fav game"];
+  var questions = ["What's Your Name", "What's Your fav color","What's your fav game","Who r u"];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
