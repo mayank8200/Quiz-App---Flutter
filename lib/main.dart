@@ -8,20 +8,20 @@ class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return MyAppState();
+    return _MyAppState();
   }
 }
 
-class MyAppState extends State<MyApp> {
-  var i = 0;
-  void clicked() {
+class _MyAppState extends State<MyApp> {
+  var _i = 0;
+  void _clicked() {
     setState(() {
-      i = i + 1;
+      _i = _i + 1;
     });
-    print(i);
+    print(_i);
   }
 
-  var questions = ["What's Your Name", "What's Your fav color","What's your fav game","Who r u"];
+  var _questions = ["What's Your Name", "What's Your fav color","What's your fav game","Who r u"];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,22 +31,22 @@ class MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Text(questions[i]),
+            Text(_questions[_i]),
             RaisedButton(
               child: Text("Button1"),
-              onPressed: clicked,
+              onPressed: _clicked,
             ),
             RaisedButton(
               child: Text("Button2"),
-              onPressed: () => print("Button 2 Pressed"),
+              onPressed: _clicked,
             ),
             RaisedButton(
               child: Text("Button3"),
-              onPressed: () => print("Button 3 Pressed"),
+              onPressed: _clicked,
             ),
             RaisedButton(
               child: Text("Button4"),
-              onPressed: () => print("Button 4 Pressed"),
+              onPressed: _clicked,
             )
           ],
         ),
