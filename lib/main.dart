@@ -17,7 +17,9 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   var _i = 0;
-  void _clicked() {
+  var _total=0;
+  void _clicked(int score) {
+    _total+=score;
     setState(() {
       _i = _i + 1;
     });
@@ -28,24 +30,29 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': "Who is Prime Minister of India",
       'options': [
-        "Mukesh Ambani",
-        "Narendra Modi",
-        "Rahul Gandhi",
-        "Arvind Kejriwal"
+        {"text":"Mukesh Ambani","score":0},
+        {"text":"Narendra Modi","score":1},
+        {"text":"Rahul Gandhi","score":0},
+        {"text":"Arvind Kejriwal","score":0},
       ],
     },
     {
       'questionText': "Who is known as the Turbanator",
       'options': [
-        "Sachin Tendulkar",
-        "Virat Kohli",
-        "Harbhajan Singh",
-        "M.S. Dhoni"
+        {"text":"Sachin Tendulkar","score":0},
+        {"text":"Virat Kohli","score":0},
+        {"text":"Harbhajan Singh","score":1},
+        {"text":"M.S. Dhoni","score":0},
       ],
     },
     {
       'questionText': "What is Capital of India",
-      'options': ['Gujarat', "New Delhi", "Mumbai", "Bihar"],
+      'options': [
+        {"text":'Gujarat',"score":0},
+        {"text":"New Delhi","score":1},
+        {"text":"Mumbai","score":0},
+        {"text":"Bihar","score":0},
+     ],
     }
   ];
   @override
@@ -57,7 +64,7 @@ class _MyAppState extends State<MyApp> {
           ),
           body: _i < _questions.length
               ? Quiz(questions: _questions,clicked: _clicked,i: _i,)
-              : Result() 
+              : Result(_total) 
               ),
     );
   }
