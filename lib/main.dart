@@ -22,7 +22,30 @@ class _MyAppState extends State<MyApp> {
     print(_i);
   }
 
-  var _questions = ["What's Your Name", "What's Your fav color","What's your fav game","Who r u"];
+  var _questions = [
+    {
+      'questionText': "Who is Prime Minister of India",
+      'options': [
+        "Mukesh Ambani",
+        "Narendra Modi",
+        "Rahul Gandhi",
+        "Arvind Kejriwal"
+      ],
+    },
+    {
+      'questionText': "Who is known as the Turbanator",
+      'options': [
+        "Sachin Tendulkar",
+        "Virat Kohli",
+        "Harbhajan Singh",
+        "M.S. Dhoni"
+      ],
+    },
+    {
+      'questionText': "What is Capital of India",
+      'options': ['Gujarat', "New Delhi", "Mumbai", "Bihar"],
+    }
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,11 +55,10 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Question(_questions[_i]),
-            Answer(_clicked),
-            Answer(_clicked),
-            Answer(_clicked),
-            Answer(_clicked)
+            Question(_questions[_i]['questionText']),
+            ...(_questions[_i]['options'] as List<String>).map((option) {
+              return (Answer(_clicked, option));
+            })
           ],
         ),
       ),
