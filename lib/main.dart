@@ -50,18 +50,25 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("My First App"),
-        ),
-        body: Column(
-          children: [
-            Question(_questions[_i]['questionText']),
-            ...(_questions[_i]['options'] as List<String>).map((option) {
-              return (Answer(_clicked, option));
-            })
-          ],
-        ),
-      ),
+          appBar: AppBar(
+            title: Text("My First App"),
+          ),
+          body: _i < _questions.length
+              ? Column(
+                  children: [
+                    Question(_questions[_i]['questionText']),
+                    ...(_questions[_i]['options'] as List<String>)
+                        .map((option) {
+                      return (Answer(_clicked, option));
+                    })
+                  ],
+                )
+              : Center(
+                  child: Text(
+                    "You did it!!! Great",
+                    style: TextStyle(fontSize: 40),
+                  ),
+                )),
     );
   }
 }
