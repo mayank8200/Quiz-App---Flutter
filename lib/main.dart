@@ -18,6 +18,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   var _i = 0;
   var _total=0;
+  void reset()
+  {
+    setState(() {
+      _i = 0;
+    _total = 0;
+    });
+    
+  }
   void _clicked(int score) {
     _total+=score;
     setState(() {
@@ -64,7 +72,7 @@ class _MyAppState extends State<MyApp> {
           ),
           body: _i < _questions.length
               ? Quiz(questions: _questions,clicked: _clicked,i: _i,)
-              : Result(_total) 
+              : Result(_total,reset) 
               ),
     );
   }
