@@ -22,19 +22,15 @@ Making this app will give you a good revision of flutter and dart basics. As we 
 * and else.
 
 Technologies,Languages and Tools Involved:-<br><br>
-<img alt="Dart" src="https://img.shields.io/badge/dart-%230175C2.svg?&style=for-the-badge&logo=dart&logoColor=white"/>
-<img alt="Flutter" src="https://img.shields.io/badge/Flutter%20-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white" />
-<img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-<img alt="IOS" src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">
-<img alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+<img alt="Dart" src="https://img.shields.io/badge/dart-%230175C2.svg?&style=for-the-badge&logo=dart&logoColor=white"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="Flutter" src="https://img.shields.io/badge/Flutter%20-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="IOS" src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Working Of App(GIF)
 <img src="https://i.imgur.com/F3S1SW0.gif" width="400" height="700" />
 
 ## Screenshots Of Different Phases
-#### Front Page
-<div >
-<img src="https://i.imgur.com/AObhRNq.png" width="400" height="700" />&nbsp;&nbsp;</div>
-<div>
-<img src="https://imgur.com/4Ap0EO3.png" width="400" height="700" />
-</div>
+<img src="https://i.imgur.com/AObhRNq.png" width="400" height="700" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://imgur.com/4Ap0EO3.png" width="400" height="700" />
+
