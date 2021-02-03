@@ -28,6 +28,16 @@ Technologies,Languages and Tools Involved:-<br><br>
 <img alt="IOS" src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">&nbsp;&nbsp;&nbsp;&nbsp;
 <img alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>&nbsp;&nbsp;&nbsp;&nbsp;
 
+## How to run
+```
+1. Download the Code
+2. Open Terminal and Locate downloaded folder
+3. type "flutter run" (without "")
+```
+## Requirements
+1. Supported Device/ Emulator must be connected
+2. Flutter and Dart Packages must be installed
+
 ## Working Of App(GIF)
 <img src="https://i.imgur.com/F3S1SW0.gif" width="400" height="700" />
 
